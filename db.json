@@ -1,0 +1,1069 @@
+{
+    "restaurants": [
+        {
+            "id": 0,
+            "name": "Crepes & Waffles",
+            "logo": "images/crepes&waffles.jpg",
+            "categories": [
+                "Variado"
+            ],
+            "price": 2,
+            "address": [
+                "Cra 51 # 76 - 47",
+                "CC Buenavista 1",
+                "CC Viva"
+            ],
+            "featured": true,
+            "phone": "",
+            "menu_Url": "https://www.crepesywaffles.com/themes/custom/tecsua/pdf/menu_dom_costa.pdf"
+        },
+        {
+            "id": 1,
+            "name": "Hamachi",
+            "logo": "images/hamachi.jpg",
+            "categories": [
+                "Sushi"
+            ],
+            "price": 4,
+            "address": [
+                "Cra 51B # 79-324"
+            ],
+            "featured": true,
+            "phone": "",
+            "menu_Url": "https://www.crepesywaffles.com/themes/custom/tecsua/pdf/menu_dom_costa.pdf"
+        },
+        {
+            "id": 2,
+            "name": "FiorDi",
+            "logo": "images/fiordi.jpg",
+            "categories": [
+                "Pizza",
+                "Pasta",
+                "Sushi"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 51B # 79 - 60"
+            ],
+            "featured": true,
+            "phone": "",
+            "menu_Url": "https://www.fiordi.co/"
+        },
+        {
+            "id": 3,
+            "name": "Hedonista",
+            "logo": "images/mia.jpg",
+            "categories": [
+                "Café"
+            ],
+            "price": 3,
+            "address": [
+                "Calle 98 # 58 - 20"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account14235580/16103539_1.pdf?0.19684805681282314"
+        },
+        {
+            "id": 5,
+            "name": "Turco's",
+            "logo": "images/turcos.jpg",
+            "categories": [
+                "Árabe"
+            ],
+            "price": 3,
+            "address": [
+                "Clle 84 # 54 - 59"
+            ],
+            "featured": true,
+            "phone": "",
+            "menu_Url": "https://cdn.flowcode.com/prodassets/Menú_Turcos_ENERO_2021.pdf"
+        },
+        {
+            "id": 6,
+            "name": "L'America",
+            "logo": "images/l'america.jpg",
+            "categories": [
+                "Pizza",
+                "Pasta"
+            ],
+            "price": 2,
+            "address": [
+                "Cra 64 # 84 - 174"
+            ],
+            "featured": true,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 7,
+            "name": "Mía",
+            "logo": "images/mia.jpg",
+            "categories": [
+                "Pasta"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 57 # 75 - 160"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 8,
+            "name": "Bagatelle",
+            "logo": "images/bagatelle.jpg",
+            "categories": [
+                "Desayunos",
+                "Panadería"
+            ],
+            "price": 3,
+            "address": [
+                "Clle 85 # 51 - 107"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 9,
+            "name": "Cocina 33",
+            "logo": "images/cocina33.jpg",
+            "categories": [
+                "BBQ"
+            ],
+            "price": 3,
+            "address": [
+                "KM-8 Vía La Cordialidad"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 10,
+            "name": "El Solar de Mao",
+            "logo": "images/elsolardemao.jpg",
+            "categories": [
+                "Típica"
+            ],
+            "price": 2,
+            "address": [
+                "KM-8 Vía La Cordialidad"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 11,
+            "name": "L'Angolo",
+            "logo": "images/l'angolo.jpg",
+            "categories": [
+                "Pizza",
+                "Pasta"
+            ],
+            "price": 2,
+            "address": [
+                "Clle 75 # 58 - 80"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 12,
+            "name": "Tonys Gastro Bar",
+            "logo": "images/tonys.jpg",
+            "categories": [
+                "BBQ"
+            ],
+            "price": 2,
+            "address": [
+                "Cra 51 # 82 - 264 L3"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 13,
+            "name": "Urban Bistro",
+            "logo": "images/urbanbistro.jpg",
+            "categories": [
+                "Rápida"
+            ],
+            "price": 2,
+            "address": [
+                "Cra 59B # 79 - 120"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 14,
+            "name": "Zaitun",
+            "logo": "images/zaitun.jpg",
+            "categories": [
+                "Árabe"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 51B # 85 - 74"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 15,
+            "name": "Chicken Ready",
+            "logo": "images/chickenready.jpg",
+            "categories": [
+                "Pollo"
+            ],
+            "price": 2,
+            "address": [
+                "Clle 76 # 51 - 13"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 16,
+            "name": "Cucayo",
+            "logo": "images/cucayo.jpg",
+            "categories": [
+                "Típica"
+            ],
+            "price": 3,
+            "address": [
+                "Clle 85 # 53 Esq"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 17,
+            "name": "El Celler",
+            "logo": "images/elceller.jpg",
+            "categories": [
+                "De Autor"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 54 # 75 - 119"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 18,
+            "name": "Felix & Kahlo",
+            "logo": "images/felix&kahlo.jpg",
+            "categories": [
+                "Mexicana"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 55 # 74 - 95"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 19,
+            "name": "GO Green",
+            "logo": "images/gogreen.jpg",
+            "categories": [
+                "Saludable"
+            ],
+            "price": 2,
+            "address": [
+                "CC Plaza del Parque"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 21,
+            "name": "Mailia",
+            "logo": "images/mailia.jpg",
+            "categories": [
+                "De Autor"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 48 # 74 - 71"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 22,
+            "name": "Mar de Leva",
+            "logo": "images/mardeleva.jpg",
+            "categories": [
+                "Mariscos"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 58 # 70 - 80"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 23,
+            "name": "Maya",
+            "logo": "images/maya.jpg",
+            "categories": [
+                "Mexicana"
+            ],
+            "price": 2,
+            "address": [
+                "Cra 49C # 75 - 47",
+                "Cra 58 # 96 - 189"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 24,
+            "name": "Mero",
+            "logo": "images/mero.jpg",
+            "categories": [
+                "Mariscos"
+            ],
+            "price": 2,
+            "address": [
+                "CC Plaza del Parque"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 25,
+            "name": "Miura",
+            "logo": "images/miura.jpg",
+            "categories": [
+                "BBQ"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 52 # 76 - 188 L7"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 26,
+            "name": "Paloma",
+            "logo": "images/paloma.jpg",
+            "categories": [
+                "De Autor"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 55 # 74 - 125"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 27,
+            "name": "Pummarola",
+            "logo": "images/pummarola.jpg",
+            "categories": [
+                "Pizza",
+                "Pasta"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 51B # 82 - 100"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 28,
+            "name": "RosaNegra",
+            "logo": "images/rosanegra.jpg",
+            "categories": [
+                "Mexicana"
+            ],
+            "price": 2,
+            "address": [
+                "Clle 79 # 55 - 39"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 30,
+            "name": "Troll",
+            "logo": "images/troll.jpg",
+            "categories": [
+                "Rápida"
+            ],
+            "price": 2,
+            "address": [
+                "Puerta 7 Uninorte"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 31,
+            "name": "Terraza Árabe",
+            "logo": "images/terrazaarabe.jpg",
+            "categories": [
+                "Árabe"
+            ],
+            "price": 2,
+            "address": [
+                "Cra 59 # 70 - 13"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 32,
+            "name": "Cannibal",
+            "logo": "images/cannibal.jpg",
+            "categories": [
+                "BBQ"
+            ],
+            "price": 2,
+            "address": [
+                "CC Viva"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 34,
+            "name": "Cuzco",
+            "logo": "images/cuzco.jpg",
+            "categories": [
+                "Peruana"
+            ],
+            "price": 4,
+            "address": [
+                "Cra 52 # 76 - 188"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 35,
+            "name": "Fit Choices",
+            "logo": "images/fitchoices.jpg",
+            "categories": [
+                "Saludable"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 58 # 82 - 10",
+                "Clle 79 # 55 - 39",
+                "CC Plaza del Parque L34"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 36,
+            "name": "Heladeria Americana",
+            "logo": "images/heladeriaamericana.jpg",
+            "categories": [
+                "Heladería",
+                "Rápida"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 62 # 76 Esq."
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 37,
+            "name": "Humo",
+            "logo": "images/humo.jpg",
+            "categories": [
+                "BBQ"
+            ],
+            "price": 2,
+            "address": [
+                "CC Plaza del Parque"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 38,
+            "name": "La Callejera",
+            "logo": "images/lacallejera.jpg",
+            "categories": [
+                "Mexicana"
+            ],
+            "price": 2,
+            "address": [
+                "CC Viva"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 39,
+            "name": "La Scarpetta",
+            "logo": "/images/lascapetta.jpg",
+            "categories": [
+                "Pizza",
+                "Pasta"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 64 # 84 - 180"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 40,
+            "name": "Martinique",
+            "logo": "images/martinique.jpg",
+            "categories": [
+                "Pizza",
+                "Pasta"
+            ],
+            "price": 3,
+            "address": [
+                "CC Viva"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 41,
+            "name": "Meeting Point",
+            "logo": "images/meetingpoint.jpg",
+            "categories": [
+                "Pizza",
+                "Rápida"
+            ],
+            "price": 2,
+            "address": [
+                "Cra 61 # 68 - 100"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 42,
+            "name": "Mistura",
+            "logo": "images/mistura.jpg",
+            "categories": [
+                "BBQ"
+            ],
+            "price": 4,
+            "address": [
+                "Cra 52 # 76 - 126"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 43,
+            "name": "Sanguchería Perú Caribe",
+            "logo": "images/sangucheriaperucaribe.jpg",
+            "categories": [
+                "Sandwich"
+            ],
+            "price": 2,
+            "address": [
+                "Clle 93 # 51 - 37"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 44,
+            "name": "Pescaito",
+            "logo": "images/pescaito.jpg",
+            "categories": [
+                "Mariscos"
+            ],
+            "price": 2,
+            "address": [
+                "Clle 79 # 43B - 0"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 45,
+            "name": "Pulpo Paul",
+            "logo": "images/pulpopaul.jpg",
+            "categories": [
+                "Mariscos"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 51B # 79 - 211"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 46,
+            "name": "Santander del Prado",
+            "logo": "images/santanderdelprado.jpg",
+            "categories": [
+                "Típica"
+            ],
+            "price": 3,
+            "address": [
+                "Clle 60 # 50 - 08"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 47,
+            "name": "Subarashii",
+            "logo": "images/subarashii.jpg",
+            "categories": [
+                "Sushi",
+                "Asiática"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 53 # 79 - 50"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 48,
+            "name": "Tronco e Arepa",
+            "logo": "images/troncoearepa.jpg",
+            "categories": [
+                "Típica"
+            ],
+            "price": 2,
+            "address": [
+                "Cra 49 # 70 - 123"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 49,
+            "name": "Woko Woko",
+            "logo": "images/wokowoko.jpg",
+            "categories": [
+                "Asiática"
+            ],
+            "price": 2,
+            "address": [
+                "CC Viva"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 50,
+            "name": "Gaucho",
+            "logo": "images/gaucho.jpg",
+            "categories": [
+                "BBQ"
+            ],
+            "price": 2,
+            "address": [
+                "Clle 76 # 38C - 22"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 51,
+            "name": "Maio",
+            "logo": "images/maio.jpg",
+            "categories": [
+                "De Autor"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 48 # 74 - 71"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 52,
+            "name": "Parrilla Libanesa",
+            "logo": "images/parrillalibanesa.jpg",
+            "categories": [
+                "Árabe"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 61 # 68 - 02"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 53,
+            "name": "Pepe Anca",
+            "logo": "images/pepeanca.jpg",
+            "categories": [
+                "BBQ"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 49C # 76 - 164"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 54,
+            "name": "Poke Buns",
+            "logo": "images/pokebuns.jpg",
+            "categories": [
+                "Asiática"
+            ],
+            "price": 2,
+            "address": [
+                "Clle 84 # 58 - 33"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 55,
+            "name": "Quattro",
+            "logo": "images/quattro.jpg",
+            "categories": [
+                "Pizza",
+                "Pasta"
+            ],
+            "price": 3,
+            "address": [
+                "Clle 85 # 52 - 82"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 56,
+            "name": "Roast",
+            "logo": "images/roast.jpg",
+            "categories": [
+                "Sandwich"
+            ],
+            "price": 2,
+            "address": [
+                "Clle 84 # 58 - 33"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 57,
+            "name": "Olio",
+            "logo": "images/olio.jpg",
+            "categories": [
+                "Pasta"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 56 # 74 - 160"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 58,
+            "name": "Andros",
+            "logo": "images/andros.jpg",
+            "categories": [
+                "De Autor"
+            ],
+            "price": 4,
+            "address": [
+                "Cra 53 # 106 - 80"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 59,
+            "name": "Azul",
+            "logo": "images/azul.jpg",
+            "categories": [
+                "De Autor"
+            ],
+            "price": 4,
+            "address": [
+                "Cra 54 # 70 -10"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 60,
+            "name": "Brisket",
+            "logo": "images/brisket.jpg",
+            "categories": [
+                "BBQ"
+            ],
+            "price": 4,
+            "address": [
+                "Clle 75 # 60 - 57"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 61,
+            "name": "Ganache Café Bistro",
+            "logo": "images/ganachecafe.jpg",
+            "categories": [
+                "Desayunos",
+                "Café"
+            ],
+            "price": 3,
+            "address": [
+                "Calle 84 # 64 - 29"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 62,
+            "name": "La Popular",
+            "logo": "images/lapopular.jpg",
+            "categories": [
+                "Típica"
+            ],
+            "price": 2,
+            "address": [
+                "Cra 53 # 75 - 124"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 63,
+            "name": "Palo e Mango",
+            "logo": "images/paloemango.jpg",
+            "categories": [
+                "Típica"
+            ],
+            "price": 2,
+            "address": [
+                "Cra 55 # 75 - 67"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 64,
+            "name": "Raghbe",
+            "logo": "images/raghbe.jpg",
+            "categories": [
+                "Árabe"
+            ],
+            "price": 3,
+            "address": [
+                "CC Viva"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 65,
+            "name": "Il Forno",
+            "logo": "images/ilforno.jpg",
+            "categories": [
+                "Pizza",
+                "Pasta"
+            ],
+            "price": 3,
+            "address": [
+                "CC Viva"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 66,
+            "name": "Lola",
+            "logo": "images/lola.jpg",
+            "categories": [
+                "De Autor"
+            ],
+            "price": 4,
+            "address": [
+                "Cra 55 # 75 - 65"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        },
+        {
+            "id": 67,
+            "name": "La Camarona",
+            "logo": "images/lacamarona.jpg",
+            "categories": [
+                "Mariscos"
+            ],
+            "price": 3,
+            "address": [
+                "Cra 46 # 85 - 20"
+            ],
+            "featured": false,
+            "phone": "",
+            "menu_Url": "www.google.com"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "All", "emoji": "🥗"
+        },
+        {
+            "id": 2,
+            "name": "Asiática", "emoji": "🍱"
+        },
+        {
+            "id": 3,
+            "name": "BBQ", "emoji": "🍖"
+        },
+        {
+            "id": 4,
+            "name": "Café", "emoji": "☕"
+        },
+        {
+            "id": 5,
+            "name": "De Autor", "emoji": "🍽️"
+        },
+        {
+            "id": 6,
+            "name": "Desayunos", "emoji": "🍳"
+        },
+        {
+            "id": 7,
+            "name": "Helados", "emoji": "🍦"
+        },
+        {
+            "id": 8,
+            "name": "Mariscos", "emoji": "🐟"
+        },
+        {
+            "id": 9,
+            "name": "Mexicana", "emoji": "🌮"
+        },
+        {
+            "id": 10,
+            "name": "Panadería", "emoji": "🥐"
+        },
+        {
+            "id": 11,
+            "name": "Pasta", "emoji": "🍝"
+        },
+        {
+            "id": 12,
+            "name": "Peruana", "emoji": "🍛"
+        },
+        {
+            "id": 13,
+            "name": "Pizza", "emoji": "🍕"
+        },
+        {
+            "id": 14,
+            "name": "Pollo", "emoji": "🍗"
+        },
+        {
+            "id": 15,
+            "name": "Rápida", "emoji": "🌭"
+        },
+        {
+            "id": 16,
+            "name": "Fit", "emoji": "💪"
+        },
+        {
+            "id": 17,
+            "name": "Sándwich", "emoji": "🥪"
+        },
+        {
+            "id": 18,
+            "name": "Sushi", "emoji": "🍣"
+        },
+        {
+            "id": 19,
+            "name": "Típica", "emoji": "🍲"
+        },
+        {
+            "id": 20,
+            "name": "De Todito", "emoji": "🥘"
+        },
+        {
+            "id": 21,
+            "name": "Árabe", "emoji": "🍢"
+        }
+    ]
+}
