@@ -1,28 +1,42 @@
-{
-    "restaurants": [
+
+[
         {
-            "id": 0,
             "name": "Crepes & Waffles",
             "logo": "images/crepes&waffles.jpg",
             "categories": [
-                "Variado"
+                {
+                    "categorie":"Variado"
+                }
             ],
             "price": 2,
             "address": [
-                "Cra 51 # 76 - 47",
-                "CC Buenavista 1",
-                "CC Viva"
+                {
+                    "location": "Cra 51 # 76 - 47",
+                    "lat": "0.00000",
+                    "lng": "0.00000" 
+                },
+                {
+                    "location": "CC Buenavista 1",
+                    "lat": "0.00000",
+                    "lng": "0.00000" 
+                },
+                {
+                    "location": "CC Viva",
+                    "lat": "0.00000",
+                    "lng": "0.00000" 
+                }
             ],
             "featured": true,
             "phone": "",
             "menu_Url": "https://www.crepesywaffles.com/themes/custom/tecsua/pdf/menu_dom_costa.pdf"
         },
         {
-            "id": 1,
             "name": "Hamachi",
             "logo": "images/hamachi.jpg",
             "categories": [
-                "Sushi"
+                {
+                    "categorie":"Sushi"
+                }
             ],
             "price": 4,
             "address": [
@@ -33,13 +47,18 @@
             "menu_Url": "https://www.crepesywaffles.com/themes/custom/tecsua/pdf/menu_dom_costa.pdf"
         },
         {
-            "id": 2,
             "name": "FiorDi",
             "logo": "images/fiordi.jpg",
             "categories": [
-                "Pizza",
-                "Pasta",
-                "Sushi"
+                {
+                    "categorie":"Pizza"
+                },
+                {
+                    "categorie": "Pasta"
+                },
+                {
+                    "categorie":"Sushi"
+                }
             ],
             "price": 3,
             "address": [
@@ -50,11 +69,12 @@
             "menu_Url": "https://www.fiordi.co/"
         },
         {
-            "id": 3,
             "name": "Hedonista",
             "logo": "images/mia.jpg",
             "categories": [
-                "Café"
+                {
+                    "categorie": "Café"
+                }
             ],
             "price": 3,
             "address": [
@@ -65,11 +85,12 @@
             "menu_Url": "https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account14235580/16103539_1.pdf?0.19684805681282314"
         },
         {
-            "id": 5,
             "name": "Turco's",
             "logo": "images/turcos.jpg",
             "categories": [
-                "Árabe"
+                {
+                    "categorie": "Árabe"
+                }
             ],
             "price": 3,
             "address": [
@@ -80,12 +101,17 @@
             "menu_Url": "https://cdn.flowcode.com/prodassets/Menú_Turcos_ENERO_2021.pdf"
         },
         {
-            "id": 6,
             "name": "L'America",
             "logo": "images/l'america.jpg",
             "categories": [
-                "Pizza",
-                "Pasta"
+                {
+                    "categorie":"Pizza"
+                },
+                 {
+                    "categorie":"Pasta"
+                }
+                
+                
             ],
             "price": 2,
             "address": [
@@ -96,11 +122,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 7,
             "name": "Mía",
             "logo": "images/mia.jpg",
             "categories": [
-                "Pasta"
+                {
+                    "categorie":"Pasta"
+                }
             ],
             "price": 3,
             "address": [
@@ -111,12 +138,17 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 8,
             "name": "Bagatelle",
             "logo": "images/bagatelle.jpg",
             "categories": [
-                "Desayunos",
-                "Panadería"
+                {
+                    "categorie":"Desayunos"
+                },
+                {
+                    "categorie": "Panadería"
+                }
+                
+                
             ],
             "price": 3,
             "address": [
@@ -127,11 +159,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 9,
             "name": "Cocina 33",
             "logo": "images/cocina33.jpg",
             "categories": [
-                "BBQ"
+                {
+                    "categorie": "BBQ"
+                }
             ],
             "price": 3,
             "address": [
@@ -142,11 +175,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 10,
-            "name": "El Solar de Mao",
+             "name": "El Solar de Mao",
             "logo": "images/elsolardemao.jpg",
             "categories": [
-                "Típica"
+                {
+                    "categorie": "Típica"
+                }
             ],
             "price": 2,
             "address": [
@@ -157,12 +191,16 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 11,
-            "name": "L'Angolo",
+             "name": "L'Angolo",
             "logo": "images/l'angolo.jpg",
             "categories": [
-                "Pizza",
-                "Pasta"
+                {
+                    "categorie":  "Pizza"
+                },
+                {
+                    "categorie": "Pasta"
+                }               
+                
             ],
             "price": 2,
             "address": [
@@ -173,11 +211,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 12,
-            "name": "Tonys Gastro Bar",
+             "name": "Tonys Gastro Bar",
             "logo": "images/tonys.jpg",
             "categories": [
-                "BBQ"
+                {
+                    "categorie": "BBQ"
+                }
             ],
             "price": 2,
             "address": [
@@ -188,11 +227,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 13,
-            "name": "Urban Bistro",
+             "name": "Urban Bistro",
             "logo": "images/urbanbistro.jpg",
             "categories": [
-                "Rápida"
+                {
+                    "categorie": "Rápida"
+                }
             ],
             "price": 2,
             "address": [
@@ -203,11 +243,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 14,
-            "name": "Zaitun",
+             "name": "Zaitun",
             "logo": "images/zaitun.jpg",
             "categories": [
-                "Árabe"
+                {
+                    "categorie": "Árabe"
+                }
             ],
             "price": 3,
             "address": [
@@ -218,11 +259,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 15,
-            "name": "Chicken Ready",
+             "name": "Chicken Ready",
             "logo": "images/chickenready.jpg",
             "categories": [
-                "Pollo"
+                {
+                    "categorie": "Pollo"
+                }
             ],
             "price": 2,
             "address": [
@@ -233,11 +275,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 16,
-            "name": "Cucayo",
+             "name": "Cucayo",
             "logo": "images/cucayo.jpg",
             "categories": [
-                "Típica"
+                {
+                    "categorie": "Típica"
+                }
             ],
             "price": 3,
             "address": [
@@ -248,11 +291,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 17,
-            "name": "El Celler",
+             "name": "El Celler",
             "logo": "images/elceller.jpg",
             "categories": [
-                "De Autor"
+                {
+                    "categorie": "De Autor"
+                }
             ],
             "price": 3,
             "address": [
@@ -263,11 +307,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 18,
-            "name": "Felix & Kahlo",
+             "name": "Felix & Kahlo",
             "logo": "images/felix&kahlo.jpg",
             "categories": [
-                "Mexicana"
+                {
+                    "categorie": "Mexicana"
+                }
             ],
             "price": 3,
             "address": [
@@ -278,11 +323,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 19,
-            "name": "GO Green",
+             "name": "GO Green",
             "logo": "images/gogreen.jpg",
             "categories": [
-                "Saludable"
+                {
+                    "categorie": "Saludable"
+                }
             ],
             "price": 2,
             "address": [
@@ -293,11 +339,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 21,
-            "name": "Mailia",
+             "name": "Mailia",
             "logo": "images/mailia.jpg",
             "categories": [
-                "De Autor"
+                {
+                    "categorie": "De Autor"
+                }
             ],
             "price": 3,
             "address": [
@@ -308,11 +355,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 22,
-            "name": "Mar de Leva",
+             "name": "Mar de Leva",
             "logo": "images/mardeleva.jpg",
             "categories": [
-                "Mariscos"
+                {
+                    "categorie": "Mariscos"
+                }
             ],
             "price": 3,
             "address": [
@@ -323,11 +371,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 23,
-            "name": "Maya",
+             "name": "Maya",
             "logo": "images/maya.jpg",
             "categories": [
-                "Mexicana"
+                {
+                    "categorie": "Mexicana"
+                } 
             ],
             "price": 2,
             "address": [
@@ -339,11 +388,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 24,
-            "name": "Mero",
+             "name": "Mero",
             "logo": "images/mero.jpg",
             "categories": [
-                "Mariscos"
+                {
+                    "categorie": "Mariscos"
+                }
             ],
             "price": 2,
             "address": [
@@ -354,11 +404,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 25,
-            "name": "Miura",
+             "name": "Miura",
             "logo": "images/miura.jpg",
             "categories": [
-                "BBQ"
+                {
+                    "categorie": "BBQ"
+                }
             ],
             "price": 3,
             "address": [
@@ -369,11 +420,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 26,
-            "name": "Paloma",
+             "name": "Paloma",
             "logo": "images/paloma.jpg",
             "categories": [
-                "De Autor"
+                {
+                    "categorie": "De Autor"
+                }
             ],
             "price": 3,
             "address": [
@@ -384,12 +436,15 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 27,
-            "name": "Pummarola",
+             "name": "Pummarola",
             "logo": "images/pummarola.jpg",
             "categories": [
-                "Pizza",
-                "Pasta"
+                {
+                    "categorie":"Pizza"
+                },
+                {
+                    "categorie": "Pasta"
+                }
             ],
             "price": 3,
             "address": [
@@ -400,11 +455,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 28,
-            "name": "RosaNegra",
+             "name": "RosaNegra",
             "logo": "images/rosanegra.jpg",
             "categories": [
-                "Mexicana"
+                {
+                    "categorie": "Mexicana"
+                }
             ],
             "price": 2,
             "address": [
@@ -415,11 +471,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 30,
-            "name": "Troll",
+             "name": "Troll",
             "logo": "images/troll.jpg",
             "categories": [
-                "Rápida"
+                {
+                    "categorie": "Rápida"
+                }
             ],
             "price": 2,
             "address": [
@@ -430,11 +487,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 31,
-            "name": "Terraza Árabe",
+             "name": "Terraza Árabe",
             "logo": "images/terrazaarabe.jpg",
             "categories": [
-                "Árabe"
+                {
+                    "categorie": "Árabe"
+                }
             ],
             "price": 2,
             "address": [
@@ -445,11 +503,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 32,
-            "name": "Cannibal",
+             "name": "Cannibal",
             "logo": "images/cannibal.jpg",
             "categories": [
-                "BBQ"
+                {
+                    "categorie": "BBQ"
+                }
             ],
             "price": 2,
             "address": [
@@ -460,11 +519,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 34,
-            "name": "Cuzco",
+             "name": "Cuzco",
             "logo": "images/cuzco.jpg",
             "categories": [
-                "Peruana"
+                {
+                    "categorie": "Peruana"
+                }
             ],
             "price": 4,
             "address": [
@@ -475,11 +535,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 35,
-            "name": "Fit Choices",
+             "name": "Fit Choices",
             "logo": "images/fitchoices.jpg",
             "categories": [
-                "Saludable"
+                {
+                    "categorie": "Saludable"
+                }
             ],
             "price": 3,
             "address": [
@@ -492,12 +553,15 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 36,
-            "name": "Heladeria Americana",
+             "name": "Heladeria Americana",
             "logo": "images/heladeriaamericana.jpg",
             "categories": [
-                "Heladería",
-                "Rápida"
+                {
+                    "categorie": "Heladería"
+                },
+                {
+                    "categorie": "Rápida"
+                }
             ],
             "price": 3,
             "address": [
@@ -508,11 +572,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 37,
-            "name": "Humo",
+             "name": "Humo",
             "logo": "images/humo.jpg",
             "categories": [
-                "BBQ"
+                {
+                    "categorie": "BBQ"
+                }
             ],
             "price": 2,
             "address": [
@@ -523,11 +588,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 38,
-            "name": "La Callejera",
+             "name": "La Callejera",
             "logo": "images/lacallejera.jpg",
             "categories": [
-                "Mexicana"
+                {
+                    "categorie": "Mexicana"
+                }
             ],
             "price": 2,
             "address": [
@@ -538,12 +604,15 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 39,
-            "name": "La Scarpetta",
+             "name": "La Scarpetta",
             "logo": "/images/lascapetta.jpg",
             "categories": [
-                "Pizza",
-                "Pasta"
+                {
+                    "categorie":"Pizza"
+                },
+                {
+                    "categorie": "Pasta"
+                }
             ],
             "price": 3,
             "address": [
@@ -554,12 +623,15 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 40,
-            "name": "Martinique",
+             "name": "Martinique",
             "logo": "images/martinique.jpg",
             "categories": [
-                "Pizza",
-                "Pasta"
+                {
+                    "categorie":"Pizza"
+                },
+                {
+                    "categorie": "Pasta"
+                }
             ],
             "price": 3,
             "address": [
@@ -570,12 +642,15 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 41,
-            "name": "Meeting Point",
+             "name": "Meeting Point",
             "logo": "images/meetingpoint.jpg",
             "categories": [
-                "Pizza",
-                "Rápida"
+                {
+                    "categorie":"Pizza"
+                },
+                {
+                    "categorie": "Rápida"
+                }
             ],
             "price": 2,
             "address": [
@@ -586,11 +661,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 42,
-            "name": "Mistura",
+             "name": "Mistura",
             "logo": "images/mistura.jpg",
             "categories": [
-                "BBQ"
+                {
+                    "categorie": "BBQ"
+                }
             ],
             "price": 4,
             "address": [
@@ -601,11 +677,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 43,
-            "name": "Sanguchería Perú Caribe",
+             "name": "Sanguchería Perú Caribe",
             "logo": "images/sangucheriaperucaribe.jpg",
             "categories": [
-                "Sandwich"
+                {
+                    "categorie": "Sandwich"
+                }
             ],
             "price": 2,
             "address": [
@@ -616,11 +693,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 44,
-            "name": "Pescaito",
+             "name": "Pescaito",
             "logo": "images/pescaito.jpg",
             "categories": [
-                "Mariscos"
+                {
+                    "categorie": "Mariscos"
+                }
             ],
             "price": 2,
             "address": [
@@ -631,11 +709,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 45,
-            "name": "Pulpo Paul",
+             "name": "Pulpo Paul",
             "logo": "images/pulpopaul.jpg",
             "categories": [
-                "Mariscos"
+                {
+                    "categorie": "Mariscos"
+                }
             ],
             "price": 3,
             "address": [
@@ -646,11 +725,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 46,
-            "name": "Santander del Prado",
+             "name": "Santander del Prado",
             "logo": "images/santanderdelprado.jpg",
             "categories": [
-                "Típica"
+                {
+                    "categorie": "Típica"
+                }
             ],
             "price": 3,
             "address": [
@@ -661,12 +741,15 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 47,
-            "name": "Subarashii",
+             "name": "Subarashii",
             "logo": "images/subarashii.jpg",
             "categories": [
-                "Sushi",
-                "Asiática"
+                {
+                    "categorie":"Sushi"
+                },
+                {
+                    "categorie": "Asiática"
+                }
             ],
             "price": 3,
             "address": [
@@ -677,11 +760,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 48,
-            "name": "Tronco e Arepa",
+             "name": "Tronco e Arepa",
             "logo": "images/troncoearepa.jpg",
             "categories": [
-                "Típica"
+                {
+                    "categorie": "Típica"
+                }
             ],
             "price": 2,
             "address": [
@@ -692,11 +776,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 49,
-            "name": "Woko Woko",
+             "name": "Woko Woko",
             "logo": "images/wokowoko.jpg",
             "categories": [
-                "Asiática"
+                {
+                    "categorie": "Asiática"
+                }
             ],
             "price": 2,
             "address": [
@@ -707,11 +792,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 50,
-            "name": "Gaucho",
+             "name": "Gaucho",
             "logo": "images/gaucho.jpg",
             "categories": [
-                "BBQ"
+                {
+                    "categorie": "BBQ"
+                }
             ],
             "price": 2,
             "address": [
@@ -722,11 +808,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 51,
-            "name": "Maio",
+             "name": "Maio",
             "logo": "images/maio.jpg",
             "categories": [
-                "De Autor"
+                {
+                    "categorie": "De Autor"
+                }
             ],
             "price": 3,
             "address": [
@@ -737,11 +824,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 52,
-            "name": "Parrilla Libanesa",
+             "name": "Parrilla Libanesa",
             "logo": "images/parrillalibanesa.jpg",
             "categories": [
-                "Árabe"
+                {
+                    "categorie": "Árabe"
+                }
             ],
             "price": 3,
             "address": [
@@ -752,11 +840,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 53,
-            "name": "Pepe Anca",
+             "name": "Pepe Anca",
             "logo": "images/pepeanca.jpg",
             "categories": [
-                "BBQ"
+                {
+                    "categorie": "BBQ"
+                }
             ],
             "price": 3,
             "address": [
@@ -767,11 +856,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 54,
-            "name": "Poke Buns",
+             "name": "Poke Buns",
             "logo": "images/pokebuns.jpg",
             "categories": [
-                "Asiática"
+                {
+                    "categorie": "Asiática"
+                } 
             ],
             "price": 2,
             "address": [
@@ -782,12 +872,15 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 55,
-            "name": "Quattro",
+             "name": "Quattro",
             "logo": "images/quattro.jpg",
             "categories": [
-                "Pizza",
-                "Pasta"
+                {
+                    "categorie":"Pizza"
+                },
+                {
+                    "categorie": "Pasta"
+                }
             ],
             "price": 3,
             "address": [
@@ -798,11 +891,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 56,
-            "name": "Roast",
+             "name": "Roast",
             "logo": "images/roast.jpg",
             "categories": [
-                "Sandwich"
+                {
+                    "categorie": "Sandwich"
+                }
             ],
             "price": 2,
             "address": [
@@ -813,11 +907,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 57,
-            "name": "Olio",
+             "name": "Olio",
             "logo": "images/olio.jpg",
             "categories": [
-                "Pasta"
+                {
+                    "categorie": "Pasta"
+                }
             ],
             "price": 3,
             "address": [
@@ -828,11 +923,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 58,
-            "name": "Andros",
+             "name": "Andros",
             "logo": "images/andros.jpg",
             "categories": [
-                "De Autor"
+                {
+                    "categorie": "De Autor"
+                }
             ],
             "price": 4,
             "address": [
@@ -843,11 +939,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 59,
-            "name": "Azul",
+             "name": "Azul",
             "logo": "images/azul.jpg",
             "categories": [
-                "De Autor"
+                {
+                    "categorie": "De Autor"
+                }
             ],
             "price": 4,
             "address": [
@@ -858,11 +955,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 60,
-            "name": "Brisket",
+             "name": "Brisket",
             "logo": "images/brisket.jpg",
             "categories": [
-                "BBQ"
+                {
+                    "categorie": "BBQ"
+                }
             ],
             "price": 4,
             "address": [
@@ -873,12 +971,15 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 61,
-            "name": "Ganache Café Bistro",
+             "name": "Ganache Café Bistro",
             "logo": "images/ganachecafe.jpg",
             "categories": [
-                "Desayunos",
-                "Café"
+                {
+                    "categorie": "Desayunos"
+                },
+                {
+                    "categorie": "Café"
+                }
             ],
             "price": 3,
             "address": [
@@ -889,11 +990,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 62,
-            "name": "La Popular",
+             "name": "La Popular",
             "logo": "images/lapopular.jpg",
             "categories": [
-                "Típica"
+                {
+                    "categorie": "Típica"
+                }
             ],
             "price": 2,
             "address": [
@@ -904,11 +1006,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 63,
-            "name": "Palo e Mango",
+             "name": "Palo e Mango",
             "logo": "images/paloemango.jpg",
             "categories": [
-                "Típica"
+                {
+                    "categorie": "Típica"
+                }
             ],
             "price": 2,
             "address": [
@@ -919,11 +1022,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 64,
-            "name": "Raghbe",
+             "name": "Raghbe",
             "logo": "images/raghbe.jpg",
             "categories": [
-                "Árabe"
+                {
+                    "categorie": "Árabe"
+                }
             ],
             "price": 3,
             "address": [
@@ -934,12 +1038,15 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 65,
-            "name": "Il Forno",
+             "name": "Il Forno",
             "logo": "images/ilforno.jpg",
             "categories": [
-                "Pizza",
-                "Pasta"
+                {
+                    "categorie":"Pizza"
+                },
+                {
+                    "categorie": "Pasta"
+                }
             ],
             "price": 3,
             "address": [
@@ -950,11 +1057,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 66,
-            "name": "Lola",
+             "name": "Lola",
             "logo": "images/lola.jpg",
             "categories": [
-                "De Autor"
+                {
+                    "categorie": "De Autor"
+                }
             ],
             "price": 4,
             "address": [
@@ -965,11 +1073,12 @@
             "menu_Url": "www.google.com"
         },
         {
-            "id": 67,
-            "name": "La Camarona",
+             "name": "La Camarona",
             "logo": "images/lacamarona.jpg",
             "categories": [
-                "Mariscos"
+                {
+                    "categorie": "Mariscos"
+                }
             ],
             "price": 3,
             "address": [
@@ -979,91 +1088,4 @@
             "phone": "",
             "menu_Url": "www.google.com"
         }
-    ],
-    "categories": [
-        {
-            "id": 1,
-            "name": "All", "emoji": "🥗"
-        },
-        {
-            "id": 2,
-            "name": "Asiática", "emoji": "🍱"
-        },
-        {
-            "id": 3,
-            "name": "BBQ", "emoji": "🍖"
-        },
-        {
-            "id": 4,
-            "name": "Café", "emoji": "☕"
-        },
-        {
-            "id": 5,
-            "name": "De Autor", "emoji": "🍽️"
-        },
-        {
-            "id": 6,
-            "name": "Desayunos", "emoji": "🍳"
-        },
-        {
-            "id": 7,
-            "name": "Helados", "emoji": "🍦"
-        },
-        {
-            "id": 8,
-            "name": "Mariscos", "emoji": "🐟"
-        },
-        {
-            "id": 9,
-            "name": "Mexicana", "emoji": "🌮"
-        },
-        {
-            "id": 10,
-            "name": "Panadería", "emoji": "🥐"
-        },
-        {
-            "id": 11,
-            "name": "Pasta", "emoji": "🍝"
-        },
-        {
-            "id": 12,
-            "name": "Peruana", "emoji": "🍛"
-        },
-        {
-            "id": 13,
-            "name": "Pizza", "emoji": "🍕"
-        },
-        {
-            "id": 14,
-            "name": "Pollo", "emoji": "🍗"
-        },
-        {
-            "id": 15,
-            "name": "Rápida", "emoji": "🌭"
-        },
-        {
-            "id": 16,
-            "name": "Fit", "emoji": "💪"
-        },
-        {
-            "id": 17,
-            "name": "Sándwich", "emoji": "🥪"
-        },
-        {
-            "id": 18,
-            "name": "Sushi", "emoji": "🍣"
-        },
-        {
-            "id": 19,
-            "name": "Típica", "emoji": "🍲"
-        },
-        {
-            "id": 20,
-            "name": "De Todito", "emoji": "🥘"
-        },
-        {
-            "id": 21,
-            "name": "Árabe", "emoji": "🍢"
-        }
     ]
-}
