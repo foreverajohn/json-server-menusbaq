@@ -1,19 +1,19 @@
-import express from "express";
-import colors from "colors";
-import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
+const express = require("express");
+const colors = require("colors");
+const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 
 //DOTENV
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 dotenv.config();
 
 //Import MONGO DB
-import connectDB from "./config/db.js";
+const connectDB = require("./config/db.js");
 
 //CORS
-import cors from "cors";
+const cors = require("cors");
 
 //ROUTES
-import restaurantRoutes from "./routes/restaurantRoutes.js";
+const restaurantRoutes = require("./routes/restaurantRoutes");
 
 //PORT
 const PORT = process.env.PORT || 5000;

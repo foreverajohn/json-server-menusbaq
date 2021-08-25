@@ -1,13 +1,13 @@
-import express from "express";
+const express = require("express");
 const router = express.Router();
 
-import {
+const {
   addRestaurant,
   getAllRestaurants,
   getSingleRestaurant,
   updateRestaurant,
   deleteRestaurant,
-} from "../controllers/restaurantController.js";
+} = require("../controllers/restaurantController");
 
 router.route("/addrestaurant").post(addRestaurant);
 router.route("/").get(getAllRestaurants);
@@ -17,4 +17,4 @@ router
   .put(updateRestaurant)
   .delete(deleteRestaurant);
 
-export default router;
+module.exports = router;

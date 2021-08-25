@@ -1,13 +1,13 @@
-import { json } from "express";
-import asyncHandler from "express-async-handler";
-import Restaurant from "../models/restaurantModel.js";
+const { json } = require("express");
+const asyncHandler = require("express-async-handler");
+const Restaurant = require("../models/restaurantModel.js");
 
 //=====================================================
 // @desc      Create new Restaurant
 // @route     POST /api/restaurants/addrestaurant
 // @access    Private
 //=====================================================
-export const addRestaurant = asyncHandler(async (req, res) => {
+exports.addRestaurant = asyncHandler(async (req, res) => {
   const { name, logo, categories, price, address, featured, phone, menu_URL } =
     req.body;
 
@@ -35,7 +35,7 @@ export const addRestaurant = asyncHandler(async (req, res) => {
 // @access    Public
 //=====================================================
 
-export const getAllRestaurants = asyncHandler(async (req, res) => {
+exports.getAllRestaurants = asyncHandler(async (req, res) => {
   const restaurants = await Restaurant.find({});
 
   res.status(200).json({
@@ -51,7 +51,7 @@ export const getAllRestaurants = asyncHandler(async (req, res) => {
 // @access    Public
 //=====================================================
 
-export const getSingleRestaurant = asyncHandler(async (req, res) => {
+exports.getSingleRestaurant = asyncHandler(async (req, res) => {
   const restaurant = await Restaurant.findById(req.params.id);
 
   if (!restaurant) {
@@ -70,7 +70,7 @@ export const getSingleRestaurant = asyncHandler(async (req, res) => {
 // @access    Private
 //=====================================================
 
-export const updateRestaurant = asyncHandler(async (req, res) => {
+exports.updateRestaurant = asyncHandler(async (req, res) => {
   const restaurant = await Restaurant.findByIdAndUpdate(
     req.params.id,
     req.body,
@@ -84,7 +84,7 @@ export const updateRestaurant = asyncHandler(async (req, res) => {
     throw new Error("Restaurant Does not exist");
   }
 
-  res.status(200).json({
+  res.status(201).json({
     success: true,
     data: restaurant,
   });
@@ -96,7 +96,7 @@ export const updateRestaurant = asyncHandler(async (req, res) => {
 // @access    Private
 //=====================================================
 
-export const deleteRestaurant = asyncHandler(async (req, res) => {
+exports.deleteRestaurant = asyncHandler(async (req, res) => {
   const restaurant = await Restaurant.findByIdAndDelete(req.params.id);
 
   if (!restaurant) {
