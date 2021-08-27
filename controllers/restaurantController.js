@@ -1,6 +1,7 @@
 const { json } = require("express");
 const asyncHandler = require("express-async-handler");
 const Restaurant = require("../models/restaurantModel.js");
+const Category = require("../models/categoryModel.js");
 
 //=====================================================
 // @desc      Create new Restaurant
@@ -8,7 +9,7 @@ const Restaurant = require("../models/restaurantModel.js");
 // @access    Private
 //=====================================================
 exports.addRestaurant = asyncHandler(async (req, res) => {
-  const { name, logo, categories, price, address, featured, phone, menu_URL } =
+  const { name, logo, categories, price, address, featured, phone, menu_URL, comments, likes } =
     req.body;
 
   const restaurant = await Restaurant.create({
@@ -20,12 +21,45 @@ exports.addRestaurant = asyncHandler(async (req, res) => {
     featured,
     phone,
     menu_URL,
+    comments,
+    likes
   });
 
   res.status(201).json({
     Success: true,
     message: "Restaurant created successfully",
     data: restaurant,
+  });
+});
+
+//=====================================================
+// @desc      Create All Restaurants
+// @route     POST /api/restaurants/addallrestaurants
+// @access    Private
+//=====================================================
+exports.addAllRestaurants = asyncHandler(async (req, res) => {
+
+  await Restaurant.insertMany(req.body)
+
+  res.status(201).json({
+    Success: true,
+    message: "Restaurants created successfully",
+    data: restaurants,
+  });
+});
+
+//=====================================================
+// @desc      Create All Categories
+// @route     POST /api/restaurants/addallcategories
+// @access    Private
+//=====================================================
+exports.addAllCategories = asyncHandler(async (req, res) => {
+
+  await Category.insertMany(req.body)
+
+  res.status(201).json({
+    Success: true,
+    message: "Categories created successfully"
   });
 });
 

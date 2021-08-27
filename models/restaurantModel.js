@@ -8,25 +8,57 @@ const RestaurantSchema = mongoose.Schema({
   logo: String,
   categories: [
     {
-      categorie: String,
+      category: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'categories'
+      }
     },
   ],
   price: {
     type: Number,
   },
-  address: [
+  locations: [
     {
-      location: String,
+      address: String,
       lat: String,
       lng: String,
+      phone: String,
     },
   ],
   featured: Boolean,
-  phone: String,
   menu_URL: String,
-});
+  comments: [
+    {
+      user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'users'
+      },
+      text: {
+        type: String,
+        required: true
+      },
+      name: {
+        type: String
+      },
+      avatar: {
+        type: String
+      },
+      date: {
+        type: Date,
+        default: Date.now
+      }
+    }
 
-//Add likes and comments
+  ],
+  likes: [
+    {
+      user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'users'
+      }
+    }
+  ]
+});
 
 const Restaurant = mongoose.model("Restaurant", RestaurantSchema);
 
