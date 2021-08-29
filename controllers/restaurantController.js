@@ -1,4 +1,3 @@
-const { json } = require("express");
 const asyncHandler = require("express-async-handler");
 const Restaurant = require("../models/restaurantModel.js");
 const Category = require("../models/categoryModel.js");
@@ -33,13 +32,13 @@ exports.addRestaurant = asyncHandler(async (req, res) => {
 });
 
 //=====================================================
-// @desc      Create All Restaurants
+// @desc      Create many restaurants
 // @route     POST /api/restaurants/addallrestaurants
 // @access    Private
 //=====================================================
 exports.addAllRestaurants = asyncHandler(async (req, res) => {
 
-  await Restaurant.insertMany(req.body)
+  const restaurants = await Restaurant.insertMany(req.body)
 
   res.status(201).json({
     Success: true,
@@ -49,17 +48,18 @@ exports.addAllRestaurants = asyncHandler(async (req, res) => {
 });
 
 //=====================================================
-// @desc      Create All Categories
+// @desc      Create many categories at once
 // @route     POST /api/restaurants/addallcategories
 // @access    Private
 //=====================================================
 exports.addAllCategories = asyncHandler(async (req, res) => {
 
-  await Category.insertMany(req.body)
+  const categories = await Category.insertMany(req.body)
 
   res.status(201).json({
     Success: true,
-    message: "Categories created successfully"
+    message: "Categories created successfully",
+    data: categories
   });
 });
 
@@ -70,12 +70,28 @@ exports.addAllCategories = asyncHandler(async (req, res) => {
 //=====================================================
 
 exports.getAllRestaurants = asyncHandler(async (req, res) => {
-  const restaurants = await Restaurant.find({});
+  const restaurants = await Restaurant.find({})
 
   res.status(200).json({
     success: true,
     count: restaurants.length,
     data: restaurants,
+  });
+});
+
+//=====================================================
+// @desc      Get All Restaurants
+// @route     GET api/restaurants/categories
+// @access    Public
+//=====================================================
+
+exports.getAllCategories = asyncHandler(async (req, res) => {
+  const categories = await Category.find({});
+
+  res.status(200).json({
+    success: true,
+    count: categories.length,
+    data: categories,
   });
 });
 

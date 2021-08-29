@@ -10,7 +10,7 @@ const connectDB = () => {
       useNewUrlParser: true,
     })
     .then(() => {
-      console.log("MenuBAQ  mongoDB connected!".cyan.bold);
+      console.log("MenusBAQ  mongoDB connected!".cyan.bold);
     })
     .catch((err) => {
       console.log(`Error Connecting MongoDb: ${err}`.cyan.bold);

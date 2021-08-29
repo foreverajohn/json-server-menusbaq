@@ -1,37 +1,53 @@
 const mongoose = require("mongoose");
 
-const RestaurantSchema = mongoose.Schema({
+const RestaurantSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, "Please provide a name"],
   },
-  logo: String,
+  logo: {
+    type: String,
+  },
   categories: [
     {
       category: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'categories'
+        ref: 'Category'
+      },
+      name: {
+        type: String,
+      },
+      emoji: {
+        type: String,
+      },
+      color: {
+        type: String,
       }
-    },
+    }
   ],
   price: {
     type: Number,
   },
   locations: [
     {
+      name: String,
       address: String,
       lat: String,
-      lng: String,
+      long: String,
       phone: String,
     },
   ],
-  featured: Boolean,
-  menu_URL: String,
+  featured: {
+    type: Boolean,
+  },
+  menu_URL: {
+    type: String,
+  },
   comments: [
     {
       user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'users'
+        ref: 'User'
       },
       text: {
         type: String,
@@ -54,7 +70,7 @@ const RestaurantSchema = mongoose.Schema({
     {
       user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'users'
+        ref: 'User'
       }
     }
   ]

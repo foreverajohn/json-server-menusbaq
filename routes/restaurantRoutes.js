@@ -7,6 +7,7 @@ const {
   addAllCategories,
   getAllRestaurants,
   getSingleRestaurant,
+  getAllCategories,
   updateRestaurant,
   deleteRestaurant,
 } = require("../controllers/restaurantController");
@@ -15,6 +16,7 @@ router.route("/addrestaurant").post(addRestaurant);
 router.route("/addallrestaurants").post(addAllRestaurants);
 router.route("/addallcategories").post(addAllCategories);
 router.route("/").get(getAllRestaurants);
+router.route("/categories").get(getAllCategories);
 router
   .route("/:id")
   .get(getSingleRestaurant)
