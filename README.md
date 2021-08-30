@@ -64,7 +64,7 @@
 
  **NOTE** - This api's are valid if you are running in development mode on your local machine.  If the port is not running correctly please check the .env file PORT variable.  
  
-## **Restaurants API**
+# **Restaurants API**
 
 
 ## Get all restaurants
@@ -86,6 +86,7 @@ Request
 Request
 > **Headers** : 
 `"Content-Type" : "application/json"`
+
 > **Body** :  Not required
 
 Response success (200)
@@ -100,6 +101,7 @@ Request
 Request
 > **Headers** : 
 `"Content-Type" : "application/json"`
+
 > **Body** : All fields in JSON object format ex: 
 `{"name": "name", "contact": "00000000000"}`
 
@@ -117,6 +119,7 @@ Request
 Request
 > **Headers** : 
 `"Content-Type" : "application/json"`
+
 > **Body** : All fields to be updates in JSON object format ex: (Fields that do not require to be update do not need to be included) 
 `{"name": "New name", "contact": "00000000000"}`
 
@@ -134,10 +137,134 @@ Request
 Request
 > **Headers** : 
 `"Content-Type" : "application/json"`
-> **Body** :  Not required
+
+> **Body** : 
+>  Not required
 
 
 Response (201)
 > JSON Object 
 
+# **Users API**
 
+## Register a new user
+
+Request
+> POST Request
+`http://localhost:5000/api/user/register`
+
+Request
+> **Headers** : 
+`"Content-Type" : "application/json"`
+
+> **Body** : All fields in JSON object format ex: 
+`{"name": "name", "email": "example@example.com", "password": "123456789"}`
+
+Password must be at least 6 characters
+
+
+Response (201)
+> JSON Object 
+``` 
+{
+	"success":  true,
+	"data":  {
+				"_id":  Number,
+				"name": String,
+				"email": String,
+				"isAdmin": Boolian,
+				"token": String
+	}
+}
+```
+
+## Login user
+
+Request
+> POST Request
+`http://localhost:5000/api/user/login`
+
+Request
+> **Headers** : 
+`"Content-Type" : "application/json"`
+
+> **Body** : All fields in JSON object format ex: 
+`{"email": "example@example.com", "password": "123456789"}`
+
+
+Response (200)
+> JSON Object 
+``` 
+{
+	"success":  true,
+	"data":  {
+				"_id":  Number,
+				"name": String,
+				"email": String,
+				"isAdmin": Boolian,
+				"token": String
+	}
+}
+```
+
+## Update user
+
+Request
+> PUT Request
+`http://localhost:5000/api/user/:id`
+Get the id of the current logged in user 
+
+Request
+> **Headers** : 
+`"Content-Type" : "application/json"`
+``"Authorization: `Bearer ${Token of current loged in user}`;``
+
+> **Body** : All fields in JSON object format ex: 
+`{"name: "New Name", "email": "newemail@example.com", "password": "123456789"}`
+
+
+Response (201)
+> JSON Object 
+``` 
+{
+	"success":  true,
+	"data":  {
+				"_id":  Number,
+				"name": String,
+				"email": String,
+				"isAdmin": Boolian,
+				"token": String
+	}
+}
+```
+
+## Delete user
+
+Request
+> DELETE Request
+`http://localhost:5000/api/user/:id`
+Get the id of the current logged in user 
+
+Request
+> **Headers** : 
+`"Content-Type" : "application/json"`
+``"Authorization: `Bearer ${Token of current loged in user}`;``
+
+> **Body**
+Not Required
+
+
+Response (201)
+> JSON Object 
+``` 
+{
+	"success":  true,
+	"data":  {
+				"_id":  Number,
+				"name": String,
+				"email": String,
+				"isAdmin": Boolian,
+				"token": String
+	}
+}
+```

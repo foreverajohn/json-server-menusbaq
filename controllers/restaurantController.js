@@ -1,6 +1,6 @@
-const asyncHandler = require("express-async-handler");
-const Restaurant = require("../models/restaurantModel.js");
-const Category = require("../models/categoryModel.js");
+const asyncHandler = require('../middleware/asyncMiddleware');
+const Restaurant = require('../models/restaurantModel.js');
+const Category = require('../models/categoryModel.js');
 
 //=====================================================
 // @desc      Create new Restaurant
@@ -8,8 +8,18 @@ const Category = require("../models/categoryModel.js");
 // @access    Private
 //=====================================================
 exports.addRestaurant = asyncHandler(async (req, res) => {
-  const { name, logo, categories, price, address, featured, phone, menu_URL, comments, likes } =
-    req.body;
+  const {
+    name,
+    logo,
+    categories,
+    price,
+    address,
+    featured,
+    phone,
+    menu_URL,
+    comments,
+    likes,
+  } = req.body;
 
   const restaurant = await Restaurant.create({
     name,
@@ -21,12 +31,12 @@ exports.addRestaurant = asyncHandler(async (req, res) => {
     phone,
     menu_URL,
     comments,
-    likes
+    likes,
   });
 
   res.status(201).json({
     Success: true,
-    message: "Restaurant created successfully",
+    message: 'Restaurant created successfully',
     data: restaurant,
   });
 });
@@ -37,12 +47,11 @@ exports.addRestaurant = asyncHandler(async (req, res) => {
 // @access    Private
 //=====================================================
 exports.addAllRestaurants = asyncHandler(async (req, res) => {
-
-  const restaurants = await Restaurant.insertMany(req.body)
+  const restaurants = await Restaurant.insertMany(req.body);
 
   res.status(201).json({
     Success: true,
-    message: "Restaurants created successfully",
+    message: 'Restaurants created successfully',
     data: restaurants,
   });
 });
@@ -53,13 +62,12 @@ exports.addAllRestaurants = asyncHandler(async (req, res) => {
 // @access    Private
 //=====================================================
 exports.addAllCategories = asyncHandler(async (req, res) => {
-
-  const categories = await Category.insertMany(req.body)
+  const categories = await Category.insertMany(req.body);
 
   res.status(201).json({
     Success: true,
-    message: "Categories created successfully",
-    data: categories
+    message: 'Categories created successfully',
+    data: categories,
   });
 });
 
@@ -70,7 +78,7 @@ exports.addAllCategories = asyncHandler(async (req, res) => {
 //=====================================================
 
 exports.getAllRestaurants = asyncHandler(async (req, res) => {
-  const restaurants = await Restaurant.find({})
+  const restaurants = await Restaurant.find({});
 
   res.status(200).json({
     success: true,
@@ -105,7 +113,7 @@ exports.getSingleRestaurant = asyncHandler(async (req, res) => {
   const restaurant = await Restaurant.findById(req.params.id);
 
   if (!restaurant) {
-    throw new Error("Restaurant Does not exist");
+    return next(new ErrorResponse('Restaurant does not exist', 401));
   }
 
   res.status(200).json({
@@ -131,7 +139,7 @@ exports.updateRestaurant = asyncHandler(async (req, res) => {
   );
 
   if (!restaurant) {
-    throw new Error("Restaurant Does not exist");
+    return next(new ErrorResponse('Restaurant does not exist', 401));
   }
 
   res.status(201).json({
@@ -150,11 +158,11 @@ exports.deleteRestaurant = asyncHandler(async (req, res) => {
   const restaurant = await Restaurant.findByIdAndDelete(req.params.id);
 
   if (!restaurant) {
-    throw new Error("Restaurant Does not exist");
+    return next(new ErrorResponse('Restaurant does not exist', 401));
   }
 
   res.status(200).json({
     success: true,
-    message: "Restaurant deleted succesfully",
+    message: 'Restaurant deleted succesfully',
   });
 });
