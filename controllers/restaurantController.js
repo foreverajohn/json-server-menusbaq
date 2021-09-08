@@ -123,6 +123,22 @@ exports.getSingleRestaurant = asyncHandler(async (req, res) => {
 });
 
 //=====================================================
+// @desc      Get All Featured Restaurants
+// @route     GET api/restaurants/featured
+// @access    Public
+//=====================================================
+
+exports.getFeaturedRestaurants = asyncHandler(async (req, res) => {
+  const featured = await Restaurant.find({ featured: true })
+
+  res.status(200).json({
+    success: true,
+    count: featured.length,
+    data: featured,
+  });
+});
+
+//=====================================================
 // @desc      Update Restaurant
 // @route     PUT api/restaurants/:id
 // @access    Private
