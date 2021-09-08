@@ -1,6 +1,7 @@
 const express = require('express');
 const colors = require('colors');
 const errorHandler = require('./middleware/errorMiddleware');
+const morgan = require('morgan')
 
 //DOTENV
 const dotenv = require('dotenv');
@@ -17,6 +18,10 @@ const PORT = process.env.PORT || 5000;
 
 //Initialize expess
 const app = express();
+
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'))
+}
 
 //Connect to mongo DB
 connectDB();
