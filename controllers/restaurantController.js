@@ -1,6 +1,7 @@
 const asyncHandler = require('../middleware/asyncMiddleware');
 const Restaurant = require("../models/restaurantModel.js");
 const Category = require("../models/categoryModel.js");
+const User = require('../models/userModel.js');
 
 //=====================================================
 // @desc      Create new Restaurant
@@ -197,4 +198,51 @@ exports.deleteRestaurant = asyncHandler(async (req, res) => {
     success: true,
     message: "Restaurant deleted succesfully",
   });
+});
+
+//=====================================================
+// @desc      Mark Restaurant as Favorite
+// @route     POST api/restaurants/:id/favorite
+// @access    Private
+//=====================================================
+
+exports.markFavoriteRestaurant = asyncHandler(async (req, res) => {
+  const restaurant = await Restaurant.findById(req.params.id);
+  const user = await User.findById(req.user._id)
+
+  if (restaurant) {
+    const alreadyFaved = user.favorites.find(r => r._id.toString() === restaurant._id.toString())
+    if (alreadyFaved) {
+      const removeIndex = user.favorites.map(fav => fav._id.toString()).indexOf(req.params.id)
+      console.log(removeIndex)
+      if (removeIndex === 0) {
+        user.favorites = []
+      } else {
+        const updatedFavs = user.favorites.splice(removeIndex, 1)
+
+        user.favorites = updatedFavs
+      }
+      await user.save()
+
+      res.status(201).json({
+        message: 'Fav removed.',
+        user_id: user._id,
+        favorites: user.favorites
+      })
+    } else {
+
+      user.favorites.push(restaurant)
+
+      await user.save()
+      res.status(201).json({
+        message: 'Fav added.',
+        user_id: user._id,
+        favorites: user.favorites
+      })
+    }
+  } else {
+    res.status(404)
+    throw new Error('Restaurant not found.')
+  }
+
 });

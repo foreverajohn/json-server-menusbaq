@@ -105,7 +105,7 @@ exports.updateUser = asyncHandler(async (req, res, next) => {
 
 //====================================
 // @desc     Delete user
-// @route    DELETE /api/v1/users/:id
+// @route    DELETE /api/users/:id
 // @access   Private/Admin
 //====================================
 
@@ -122,7 +122,14 @@ exports.deleteUser = asyncHandler(async (req, res, next) => {
 });
 
 //=====================================================
-// @desc      Google Auth Callback
-// @route     POST /auth/google/callback
-// @access    Public
+// @desc      Get all users
+// @route     GET /user
+// @access    Private @to-do
 //=====================================================
+exports.getUsers = asyncHandler(async (req, res) => {
+  const users = await User.find({}).populate('favorites.restaurant', 'name categories');
+
+  res
+    .status(200)
+    .json(users);
+});
