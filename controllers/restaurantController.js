@@ -1,4 +1,4 @@
-const asyncHandler = require("express-async-handler");
+const asyncHandler = require('../middleware/asyncMiddleware');
 const Restaurant = require("../models/restaurantModel.js");
 const Category = require("../models/categoryModel.js");
 
