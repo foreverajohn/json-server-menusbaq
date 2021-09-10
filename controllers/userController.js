@@ -67,6 +67,7 @@ exports.login = asyncHandler(async (req, res, next) => {
       email: user.email,
       isAdmin: user.isAdmin,
       token,
+      favorites: user.favorites
     },
   });
 });
