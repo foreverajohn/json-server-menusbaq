@@ -6,7 +6,7 @@ const User = require('../models/userModel.js');
 //=====================================================
 // @desc      Create new Restaurant
 // @route     POST /api/restaurants/addrestaurant
-// @access    Private
+// @access    Private/admin
 //=====================================================
 exports.addRestaurant = asyncHandler(async (req, res) => {
   const { name, logo, categories, price, address, featured, phone, menu_URL, comments, likes } =
@@ -35,7 +35,7 @@ exports.addRestaurant = asyncHandler(async (req, res) => {
 //=====================================================
 // @desc      Create many restaurants
 // @route     POST /api/restaurants/addallrestaurants
-// @access    Private
+// @access    Private/admin
 //=====================================================
 exports.addAllRestaurants = asyncHandler(async (req, res) => {
 
@@ -51,7 +51,7 @@ exports.addAllRestaurants = asyncHandler(async (req, res) => {
 //=====================================================
 // @desc      Create many categories at once
 // @route     POST /api/restaurants/addallcategories
-// @access    Private
+// @access    Private/admin
 //=====================================================
 exports.addAllCategories = asyncHandler(async (req, res) => {
 
@@ -158,7 +158,7 @@ exports.getSingleRestaurant = asyncHandler(async (req, res) => {
 //=====================================================
 // @desc      Update Restaurant
 // @route     PUT api/restaurants/:id
-// @access    Private
+// @access    Private/admin
 //=====================================================
 
 exports.updateRestaurant = asyncHandler(async (req, res) => {
@@ -184,7 +184,7 @@ exports.updateRestaurant = asyncHandler(async (req, res) => {
 //=====================================================
 // @desc      Delete Restaurant
 // @route     DELETE api/restaurants/:id
-// @access    Private
+// @access    Private/admin
 //=====================================================
 
 exports.deleteRestaurant = asyncHandler(async (req, res) => {
@@ -201,7 +201,7 @@ exports.deleteRestaurant = asyncHandler(async (req, res) => {
 });
 
 //=====================================================
-// @desc      Mark Restaurant as Favorite
+// @desc      Mark or Remove Restaurant Favorite
 // @route     POST api/restaurants/:id/favorite
 // @access    Private
 //=====================================================
@@ -243,6 +243,44 @@ exports.markFavoriteRestaurant = asyncHandler(async (req, res) => {
   } else {
     res.status(404)
     throw new Error('Restaurant not found.')
+  }
+
+});
+
+//=====================================================
+// @desc      Make a review for restaurant
+// @route     POST api/restaurants/:id/review
+// @access    Private
+//=====================================================
+
+exports.reviewRestaurant = asyncHandler(async (req, res) => {
+  const { rating, text } = req.body
+  const restaurant = await Restaurant.findById(req.params.id);
+
+  if (restaurant) {
+    const alreadyReviewed = restaurant.comments.find(r => r.user.toString() === req.user._id.toString())
+    if (alreadyReviewed) {
+      res.status(400)
+      throw new Error('Ya has dejado una reseña de este restaurante.')
+    } else {
+
+      const comment = {
+        name: req.user.name,
+        rating: Number(rating),
+        text,
+        user: req.user._id
+      }
+
+      restaurant.comments.push(comment)
+
+      restaurant.rating = restaurant.comments.reduce((acc, item) => item.rating + acc, 0) / restaurant.comments.length
+
+      await restaurant.save()
+      res.status(201).json({ message: 'Reseña añadida.' })
+    }
+  } else {
+    res.status(404)
+    throw new Error('Restaurante no encontrado.')
   }
 
 });

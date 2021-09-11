@@ -62,10 +62,18 @@ const RestaurantSchema = new mongoose.Schema({
       date: {
         type: Date,
         default: Date.now
+      },
+      rating: {
+        type: Number,
+        required: true,
+        min: 0,
+        max: 5
       }
     }
-
   ],
+  rating: {
+    type: Number,
+  },
   likes: [
     {
       user: {

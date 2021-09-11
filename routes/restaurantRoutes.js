@@ -13,6 +13,7 @@ const {
   getFeaturedRestaurants,
   getCategoryRestaurants,
   markFavoriteRestaurant,
+  reviewRestaurant,
 } = require("../controllers/restaurantController");
 const { protect } = require("../middleware/authMiddleware");
 
@@ -30,5 +31,6 @@ router
   .delete(deleteRestaurant);
 
 router.route("/:id/favorite").post(protect, markFavoriteRestaurant)
+router.route("/:id/review").post(protect, reviewRestaurant)
 
 module.exports = router;
