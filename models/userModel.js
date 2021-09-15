@@ -49,6 +49,36 @@ const userSchema = new mongoose.Schema({
       logo: {
         type: String,
       },
+      categories: [
+        {
+          category: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Category'
+          },
+          name: {
+            type: String,
+          },
+          emoji: {
+            type: String,
+          },
+          color: {
+            type: String,
+          }
+        }
+      ],
+      price: {
+        type: Number,
+      },
+      locations: [
+        {
+          name: String,
+          address: String,
+        },
+      ],
+      rating: {
+        type: Number,
+        default: 3
+      },
     },
   ],
 });

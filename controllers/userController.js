@@ -73,6 +73,21 @@ exports.login = asyncHandler(async (req, res, next) => {
 });
 
 //====================================
+// @desc     Get user details
+// @route    GET /api/user/:id
+// @access   Private
+//====================================
+
+exports.getUserById = asyncHandler(async (req, res, next) => {
+  const user = await User.findById(req.params.id);
+
+  res.status(200).json({
+    success: true,
+    user
+  });
+});
+
+//====================================
 // @desc     Update user
 // @route    PUT /api/user/:id
 // @access   Private/Admin

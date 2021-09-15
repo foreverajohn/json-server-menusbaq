@@ -57,7 +57,8 @@ const RestaurantSchema = new mongoose.Schema({
         type: String
       },
       avatar: {
-        type: String
+        type: String,
+        default: 'https://skillz4kidzmartialarts.com/wp-content/uploads/2017/04/default-image-620x600.jpg'
       },
       date: {
         type: Date,
@@ -73,6 +74,7 @@ const RestaurantSchema = new mongoose.Schema({
   ],
   rating: {
     type: Number,
+    default: 3
   },
   likes: [
     {
