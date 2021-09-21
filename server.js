@@ -32,6 +32,7 @@ app.use(cors());
 //ROUTES
 const restaurantRoutes = require('./routes/restaurantRoutes');
 const userRoutes = require('./routes/userRoutes');
+const uploadRoutes = require('./routes/uploadRoutes');
 
 app.use(express.json());
 

@@ -1,6 +1,7 @@
 const User = require('../models/userModel.js');
 const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middleware/asyncMiddleware');
+const multer = require("multer");
 
 //====================================
 // @desc     Register user
@@ -9,7 +10,21 @@ const asyncHandler = require('../middleware/asyncMiddleware');
 //====================================
 
 exports.registerUser = asyncHandler(async (req, res, next) => {
-  const user = await User.create(req.body);
+  const { name, email, password, avatar } = req.body
+
+  const userExists = await User.findOne({ email })
+
+  if (userExists) {
+    res.status(400)
+    throw new Error('User already exists')
+  }
+
+  const user = await User.create({
+    name,
+    email,
+    password,
+    avatar
+  })
 
   const token = user.getSignedJwtToken();
 
@@ -20,6 +35,7 @@ exports.registerUser = asyncHandler(async (req, res, next) => {
       name: user.name,
       email: user.email,
       isAdmin: user.isAdmin,
+      avatar: user.avatar,
       token,
     },
   });
@@ -65,6 +81,7 @@ exports.login = asyncHandler(async (req, res, next) => {
       _id: user._id,
       name: user.name,
       email: user.email,
+      avatar: user.avatar,
       isAdmin: user.isAdmin,
       token,
       favorites: user.favorites
@@ -84,6 +101,21 @@ exports.getUserById = asyncHandler(async (req, res, next) => {
   res.status(200).json({
     success: true,
     user
+  });
+});
+
+//====================================
+// @desc     Get user favorites
+// @route    GET /api/user/:id/favorites
+// @access   Private
+//====================================
+
+exports.getUserFavorites = asyncHandler(async (req, res, next) => {
+  const user = await User.findById(req.params.id);
+
+  res.status(200).json({
+    success: true,
+    favorites: user.favorites
   });
 });
 
@@ -117,6 +149,25 @@ exports.updateUser = asyncHandler(async (req, res, next) => {
       token,
     },
   });
+});
+
+//====================================
+// @desc     Update user avatar
+// @route    PUT /api/user/:id/update-avatar
+// @access   Private/Admin
+//====================================
+
+exports.updateAvatar = asyncHandler(async (req, res, next) => {
+
+  try {
+
+    await User.findByIdAndUpdate(user._id, { avatar: upload.url })
+
+    res.status(201).json({ success: true, message: 'Your avatar was updated' })
+  } catch (error) {
+
+  }
+
 });
 
 //====================================

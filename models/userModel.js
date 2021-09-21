@@ -10,8 +10,9 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Por favor agregue un nombre'],
   },
-  image: {
+  avatar: {
     type: String,
+    default: 'https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png'
   },
   email: {
     type: String,
